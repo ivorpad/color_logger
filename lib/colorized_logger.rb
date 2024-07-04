@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "color_logger/version"
+require_relative "colorized_logger/version"
 require 'active_support/logger'
 require 'active_support/tagged_logging'
 
-module ColorLogger
+module ColorizedLogger
   class Error < StandardError; end
   class Logger < ActiveSupport::Logger
     def initialize(path, colorize: false)

@@ -1,13 +1,13 @@
-# ColorLogger
+# ColorizedLogger
 
-ColorLogger is a gem that provides a customizable, colorful logging solution for Rails applications, with file and line number information.
+ColorizedLogger is a gem that provides a customizable, colorful logging solution for Rails applications, with file and line number information.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'color_logger'
+gem 'colorized_logger'
 ```
 
 And then execute:
@@ -16,15 +16,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install color_logger
+    $ gem install colorized_logger
 
 ## Usage
 
-In your Rails application, you can use ColorLogger like this:
+In your Rails application, you can use ColorizedLogger like this:
 
 ```ruby
 # config/application.rb
-config.logger = ActiveSupport::TaggedLogging.new(ColorLogger::Logger.new(Rails.root.join('log', "#{Rails.env}.log")))
+config.logger = ActiveSupport::TaggedLogging.new(ColorizedLogger::Logger.new(Rails.root.join('log', "#{Rails.env}.log")))
 
 # In your controllers or models
 logger.print "This is a debug message", color: :yellow
@@ -39,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/color_logger. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/color_logger/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ivorpad/colorized_logger. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ivorpad/colorized_logger/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -47,4 +47,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ColorLogger project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/color_logger/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ColorizedLogger project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ivorpad/colorized_logger/blob/master/CODE_OF_CONDUCT.md).

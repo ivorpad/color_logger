@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    color_logger (0.1.0)
+    colorized_logger (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -13,7 +13,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  color_logger!
+  colorized_logger!
   rake (~> 13.0)
 
 BUNDLED WITH
